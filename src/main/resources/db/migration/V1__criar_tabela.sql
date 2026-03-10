@@ -1,0 +1,5 @@
+CREATE TABLE aluno (
+    id SERIAL PRIMARY KEY,
+    cpf VARCHAR(11) NOT NULL,
+    nome VARCHAR(100) NOT NULL
+);

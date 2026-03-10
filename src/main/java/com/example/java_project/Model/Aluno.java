@@ -17,6 +17,8 @@ public class Aluno {
     private Long id;
 
     @Column(nullable = false)
-    private String CPF;
+    private String Nome;
 
+    @Column(nullable = false)
+    private String CPF;
 }
