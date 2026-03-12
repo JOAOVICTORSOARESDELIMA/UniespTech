@@ -1,6 +1,6 @@
 package controller;
 
-import src.main.java.model.Aluno;
+import model.Aluno;
 import service.AlunoService;
 import java.util.List;
 

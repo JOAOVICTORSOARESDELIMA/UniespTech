@@ -1,5 +1,5 @@
 import controller.AlunoController;
-import src.main.java.model.Aluno;
+import model.Aluno;
 import repository.AlunoRepositoryMemoria;
 import service.AlunoService;
 

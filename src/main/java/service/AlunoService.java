@@ -1,6 +1,6 @@
 package service;
 
-import src.main.java.model.Aluno;
+import model.Aluno;
 import repository.AlunoRepository;
 
 import java.util.List;
