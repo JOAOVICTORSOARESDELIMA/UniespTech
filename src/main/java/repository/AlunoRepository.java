@@ -1,4 +1,4 @@
-package src.main.java.model.repository;
+package repository;
 
 import src.main.java.model.Aluno;
 import java.util.List;
