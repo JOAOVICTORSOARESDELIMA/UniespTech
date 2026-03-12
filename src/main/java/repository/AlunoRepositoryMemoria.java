@@ -1,6 +1,6 @@
-package src.repository;
+package src.main.java.model.repository;
 
-import src.model.Aluno;
+import src.main.java.model.Aluno;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -26,8 +26,15 @@ public class AlunoRepositoryMemoria implements AlunoRepository {
         contadorId = 0;
     }
 
+
+    @Override
+    public boolean cpfJaCadastrado(String cpf) {
+        return alunos.stream().anyMatch(a -> a.getCpf().equals(cpf));
+    }
+
     @Override
     public int proximoId() {
         return contadorId++;
     }
+
 }

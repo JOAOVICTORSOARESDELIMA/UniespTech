@@ -1,7 +1,7 @@
-import src.controller.AlunoController;
-import src.model.Aluno;
-import src.repository.AlunoRepositoryMemoria;
-import src.service.AlunoService;
+import controller.AlunoController;
+import src.main.java.model.Aluno;
+import repository.AlunoRepositoryMemoria;
+import service.AlunoService;
 
 import java.util.List;
 import java.util.Scanner;

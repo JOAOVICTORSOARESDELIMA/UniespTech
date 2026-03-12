@@ -1,6 +1,6 @@
-package src.repository;
+package src.main.java.model.repository;
 
-import src.model.Aluno;
+import src.main.java.model.Aluno;
 import java.util.List;
 
 public interface AlunoRepository {
@@ -9,5 +9,6 @@ public interface AlunoRepository {
     List<Aluno> listarTodos();
     void deletarTodos();
     int proximoId();
+    boolean cpfJaCadastrado(String cpf);
 
 }
