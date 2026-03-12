@@ -1,7 +1,7 @@
-package src.main.java.model.controller;
+package controller;
 
 import src.main.java.model.Aluno;
-import src.main.java.model.service.AlunoService;
+import service.AlunoService;
 import java.util.List;
 
 public class AlunoController {
