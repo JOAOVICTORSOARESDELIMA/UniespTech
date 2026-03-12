@@ -1,7 +1,7 @@
-package src.main.java.model.service;
+package service;
 
 import src.main.java.model.Aluno;
-import src.main.java.model.repository.AlunoRepository;
+import repository.AlunoRepository;
 
 import java.util.List;
 
