@@ -19,3 +19,6 @@ queria ja ter colocado direto mas vamos por partes
 - O que seria melhor utilizar(Em questão de segurança ainda to vendo)
 - Entidade aluno e seu controller(Pouca coisa)
 - Diagrama do banco 
+
+- O que foi feito hoje nas carreiras????
+- Controller de vergonha Model de vergonha repository e service que preste e sobe as coisas okay dps eu ajeito o pt daqui(Achei tudo o h2 fununciando skksk)

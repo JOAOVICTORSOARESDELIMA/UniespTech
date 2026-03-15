@@ -1,3 +1,9 @@
+# AVISO CODIGO COMENTARIOS E AFINS COM ALTO INDICE DE MEMES E PALAVRÕES SE DIVIRTA
+# (Se quiser uma playlist pra se divertir tem a minha da games e trabalhos talvez ajude a ler sem ficar no tediooo) xero da atrasada do enem pra quem estiver lendo!ksksk(se posteriormente eu puder botar isso no meu portifolio neh quem sabe)
+![img.png](img.png)
+
+https://open.spotify.com/playlist/6NWuVeqvtdlq6cQPQ9qy3C?si=15e46c9e1c2b4061
+
 # Projeto Uniesp Tech: Sistema de Gestão Acadêmica Escalonável
 
 ## Situação-Problema
