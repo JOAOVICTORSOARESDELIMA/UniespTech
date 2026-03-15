@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2c8618f-1a6c-413e-944d-742bc473fe07" name="Changes" comment=".idea">
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/src/main/java/com/Projeto/UniespTech/main/controller/AlunoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/src/main/java/com/Projeto/UniespTech/main/dto/AlunoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/src/main/java/com/Projeto/UniespTech/main/model/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/src/main/java/com/Projeto/UniespTech/main/repository/AlunoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/src/main/java/com/Projeto/UniespTech/main/service/AlunoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/src/main/java/org/example/SistemaUniesp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/src/main/resources/migration/V1__create-table-aluno.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/src/test/java/com/Project/ApplicationTests/JavaProjectApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/target/classes/com/Projeto/UniespTech/main/controller/AlunoController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/target/classes/com/Projeto/UniespTech/main/dto/AlunoDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/target/classes/com/Projeto/UniespTech/main/model/Aluno.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/target/classes/com/Projeto/UniespTech/main/repository/AlunoRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/target/classes/com/Projeto/UniespTech/main/service/AlunoService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/target/classes/migration/V1__create-table-aluno.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/target/classes/org/example/SistemaUniesp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UniespTech-Luana/target/test-classes/com/Project/ApplicationTests/JavaProjectApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/UniespTech-feat-LuanaJessica/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SistemaUniesp.java" beforeDir="false" afterPath="$PROJECT_DIR$/UniespTech-feat-LuanaJessica/SistemaUniesp.java" afterDir="false" />
-    </list>
+    <list default="true" id="d2c8618f-1a6c-413e-944d-742bc473fe07" name="Changes" comment="banco + test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +43,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "feat/LuanaJessica",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Pichau/Downloads/UniespTech-feat-LuanaJessica",
@@ -141,12 +121,65 @@
       <option name="project" value="LOCAL" />
       <updated>1773538500466</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="aluno">
+      <option name="closed" value="true" />
+      <created>1773539705399</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773539705399</updated>
+    </task>
+    <task id="LOCAL-00007" summary="aluno">
+      <option name="closed" value="true" />
+      <created>1773539804971</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1773539804971</updated>
+    </task>
+    <task id="LOCAL-00008" summary="dto, repository, service">
+      <option name="closed" value="true" />
+      <created>1773539870966</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1773539870966</updated>
+    </task>
+    <task id="LOCAL-00009" summary="pom">
+      <option name="closed" value="true" />
+      <created>1773539929595</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1773539929595</updated>
+    </task>
+    <task id="LOCAL-00010" summary="mvn">
+      <option name="closed" value="true" />
+      <created>1773539965412</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1773539965412</updated>
+    </task>
+    <task id="LOCAL-00011" summary="banco + test">
+      <option name="closed" value="true" />
+      <created>1773539992371</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1773539992371</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maven" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="aluno" />
+    <MESSAGE value="dto, repository, service" />
+    <MESSAGE value="pom" />
+    <MESSAGE value="mvn" />
+    <MESSAGE value="banco + test" />
+    <option name="LAST_COMMIT_MESSAGE" value="banco + test" />
   </component>
 </project>
