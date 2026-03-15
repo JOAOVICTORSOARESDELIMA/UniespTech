@@ -1,0 +1,32 @@
+package com.Projeto.UniespTech.main.service;
+
+import com.Projeto.UniespTech.main.dto.AlunoDTO;
+import com.Projeto.UniespTech.main.model.Aluno;
+import com.Projeto.UniespTech.main.repository.AlunoRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class AlunoService {
+    private final AlunoRepository alunoRepository;
+
+    public void cadastrarAlunos(AlunoDTO alunoDTO) {
+
+        if(alunoRepository.findByCPF(alunoDTO.cpf()))
+            throw new RuntimeException("Aluno já cadastrado!");
+
+        Aluno aluno = new Aluno();
+        aluno.setNome(alunoDTO.nome());
+        aluno.setCPF(alunoDTO.cpf());
+        alunoRepository.save(aluno);
+
+    }
+
+    public List<Aluno> receberAlunosCadastro() {
+        List<Aluno> listadeAlunos = alunoRepository.findAll();
+        return listadeAlunos;
+    }
+}
