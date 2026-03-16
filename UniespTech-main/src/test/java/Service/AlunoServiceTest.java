@@ -1,4 +1,4 @@
-import Service.AlunoService;
+package Service;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

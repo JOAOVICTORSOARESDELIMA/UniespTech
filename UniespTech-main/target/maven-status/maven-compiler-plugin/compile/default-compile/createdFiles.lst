@@ -2,3 +2,4 @@ Controller\AlunoController.class
 Service\AlunoService.class
 Repository\AlunoRepository.class
 Model\Aluno.class
+SistemaUniesp.class

@@ -1,5 +1,3 @@
-package src;
-
 import Controller.AlunoController;
 
 public class SistemaUniesp {
