@@ -33,6 +33,6 @@ public class AlunoController {
     @DeleteMapping("/apagar-tudo")
     public ResponseEntity<String> deletarTudo() {
         service.deletarTudo();
-        return ResponseEntity.ok("Todos os dados foram apagados! (Como o bug clássico do professor)");
+        return ResponseEntity.ok("Todos os dados foram apagados!");
     }
 }
