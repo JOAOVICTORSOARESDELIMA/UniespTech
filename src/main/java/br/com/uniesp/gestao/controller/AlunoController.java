@@ -2,15 +2,11 @@ package br.com.uniesp.gestao.controller;
 
 import br.com.uniesp.gestao.model.Aluno;
 import br.com.uniesp.gestao.service.AlunoService;
-import jakarta.validation.Valid;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/alunos")
+@RequestMapping("/alunos")
 public class AlunoController {
 
     private final AlunoService service;
@@ -20,19 +16,23 @@ public class AlunoController {
     }
 
     @PostMapping
-    public ResponseEntity<Aluno> cadastrar(@Valid @RequestBody Aluno aluno) {
-        Aluno novoAluno = service.cadastrar(aluno);
-        return ResponseEntity.status(HttpStatus.CREATED).body(novoAluno);
+    public String salvar(@RequestBody Aluno aluno) {
+        try {
+            service.cadastrarAluno(aluno);
+            return "Aluno cadastrado com sucesso!";
+        } catch (Exception e) {
+            return "Erro: " + e.getMessage();
+        }
     }
 
     @GetMapping
-    public ResponseEntity<List<Aluno>> listar() {
-        return ResponseEntity.ok(service.listarAlunos());
+    public List<Aluno> listar() {
+        return service.listarAlunos();
     }
 
-    @DeleteMapping("/apagar-tudo")
-    public ResponseEntity<String> deletarTudo() {
-        service.deletarTudo();
-        return ResponseEntity.ok("Todos os dados foram apagados!");
+    @DeleteMapping
+    public String deletar() {
+        service.limparBanco();
+        return "Todos os dados foram apagados!";
     }
 }
