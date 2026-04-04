@@ -13,6 +13,14 @@ O objetivo deste projeto foi reconstruir a base do sistema em **3 semanas**, apl
 
 ---
 
+## 🌐 Demonstração Online (Deploy)
+
+A aplicação está rodando em ambiente Cloud e pode ser acessada através do link abaixo:
+
+🚀 **[Acessar API no Render](https://uniesptech-w60w.onrender.com/alunos)**
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 * **Linguagem:** Java
@@ -48,9 +56,6 @@ O desenvolvimento foi dividido em etapas focadas na cultura DevOps e na qualidad
 * **Logging Estruturado:** Configuração de logs para auditoria e captura de erros críticos.
 * **Continuous Deployment (CD):** Deploy automatizado configurado em ambiente Cloud.
 * **Engenharia do Caos (Chaos Test):** Simulação de quedas do banco de dados para validar a resiliência e o registro de logs.
-
-### ⏳ Semana 4: Prova Prática (Em breve)
-* Aplicação de *Hotfix* de emergência para validar o fluxo de DevOps construído.
 
 ---
 
