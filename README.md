@@ -57,6 +57,25 @@ O desenvolvimento foi dividido em etapas focadas na cultura DevOps e na qualidad
 * **Continuous Deployment (CD):** Deploy automatizado configurado em ambiente Cloud.
 * **Engenharia do Caos (Chaos Test):** Simulação de quedas do banco de dados para validar a resiliência e o registro de logs.
 
+### 🚨 Semana 4: Prova Prática (Hotfix de Emergência)
+
+Nesta etapa, foi realizada uma simulação de falha crítica em ambiente de produção para testar a resiliência do pipeline e a agilidade na recuperação do sistema (MTTR).
+
+#### 1. O Incidente (Simulação de Erro)
+Para quebrar a aplicação, foram introduzidos propositalmente dois erros críticos:
+* **Erro de Sintaxe:** Inserção de caracteres inválidos (`asdaf`) na classe `GestaoApplication.java`, o que impede a compilação do projeto.
+* **Erro de Infraestrutura:** Alteração da URL do banco de dados no `application.properties` para um endpoint inexistente (`jdbc:h2:tcp://localhost:9999/banco-quebrado`), garantindo falha na inicialização do contexto do Spring.
+
+#### 2. O Fluxo de Resolução (DevOps Workflow)
+A correção não foi feita diretamente na branch principal. O protocolo seguido foi:
+1.  **Isolamento:** Criação de uma branch temporária `hotfix/emergency-repair`.
+2.  **Continuous Integration (CI):** O pipeline de build no GitHub Actions barrou a tentativa de merge inicial, identificando o erro de compilação automaticamente.
+3.  **Remediação:** Correção dos arquivos e validação através de testes unitários locais (`mvn test`).
+4.  **Continuous Deployment (CD):** Após o merge do Pull Request aprovado pelo CI, o Render realizou o redeploy automático da versão estável.
+
+#### 3. Resultados
+* **MTTR (Mean Time To Recovery):** Reduzido devido à automação do deploy.
+* **Integridade:** O sistema de build garantiu que nenhum código "quebrado" permanecesse em produção.
 ---
 
 ## ⚙️ Como Executar o Projeto Localmente
