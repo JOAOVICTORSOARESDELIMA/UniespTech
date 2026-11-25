@@ -1,0 +1,6 @@
+target/
+*.class
+dados/
+.idea/
+*.iml
+.vscode/

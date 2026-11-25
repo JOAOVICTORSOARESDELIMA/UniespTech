@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configura o Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Build e testes
+        run: mvn -B package
+
+      - name: Publica o .jar como artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: sistema-academico-${{ github.sha }}
+          path: target/sistema-academico.jar
+
+  docker:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build da imagem Docker
+        run: docker build -t sistema-academico:${{ github.sha }} .
